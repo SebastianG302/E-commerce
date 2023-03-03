@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>All produts:</h2>
+    <main>
+        <div class="card" *ngFor="let i of data; index as index">
+            <img [src]="i.image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5>${{i.price}}</h5>
+              <p class="card-title">{{i.title}}</p>
+              <a href="#"><i class="bi bi-cart-plus-fill"></i> Add to cart</a>
+            </div>
+          </div>
+    </main>
+</div>
